@@ -5,6 +5,44 @@
 # styles for the front end. 
 --------------------------------------------------------------*/
 
+/* Fonts */
+
+@font-face {
+	font-family: 'CooperHewitt';
+	font-weight: 400;
+	src: url('../../fonts/CooperHewitt-Book.eot');
+	src: url('../../fonts/CooperHewitt-Book.woff') format('woff'),
+		 url('../../fonts/CooperHewitt-Book.svg') format('svg');
+}
+
+@font-face {
+	font-family: 'CooperHewitt';
+	font-weight: 400;
+	font-style: italic;
+	src: url('../../fonts/CooperHewitt-BookItalic.eot');
+	src: url('../../fonts/CooperHewitt-BookItalic.woff') format('woff'),
+		 url('../../fonts/CooperHewitt-BookItalic.svg') format('svg');
+}
+
+@font-face {
+	font-family: 'CooperHewitt';
+	font-weight: 700;
+	src: url('../../fonts/CooperHewitt-Bold.eot');
+	src: url('../../fonts/CooperHewitt-Bold.woff') format('woff'),
+		 url('../../fonts/CooperHewitt-Bold.svg') format('svg');
+}
+
+@font-face {
+	font-family: 'CooperHewitt';
+	font-weight: 700;
+	font-style: italic;
+	src: url('../../fonts/CooperHewitt-BoldItalic.eot');
+	src: url('../../fonts/CooperHewitt-BoldItalic.woff') format('woff'),
+		 url('../../fonts/CooperHewitt-BoldItalic.svg') format('svg');
+}
+
+/* Base */
+
 .entry-content li,
 .site-header li,
 .site-footer li, {
@@ -24,6 +62,13 @@ a {
 .site-footer ul, 
 .site-footer ol {
 	margin-left: 1em;
+}
+
+h1, 
+h3, 
+h3, 
+h4 {
+	text-transform: uppercase;
 }
 
 @media screen and (min-width: 600px) {
@@ -139,6 +184,7 @@ a {
 }
 
 .has-huge-font-size {
+	text-transform: uppercase;
 	font-family: var(--wp--typography--font-family-heading);
 	line-height: var(--wp--typography--line-height-heading);
 }
