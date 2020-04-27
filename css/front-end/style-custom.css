@@ -5,6 +5,12 @@
 # styles for the front end. 
 --------------------------------------------------------------*/
 
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,700;1,700&family=Red+Hat+Text:ital@0;1&display=swap');
+
+/* Base */
+
 .entry-content li,
 .site-header li,
 .site-footer li, {
@@ -66,8 +72,9 @@ a {
 /* Site Header */
 
 .site-title {
+	font-family: var(--wp--typography--font-family);
 	font-size: var(--wp--typography--font-size);
-	font-weight: normal;
+	font-weight: 400;
 	margin-bottom: calc( var(--wp--spacing--small) * 0.75 );
 }
 
@@ -132,19 +139,26 @@ a {
 /* Introduction */
 
 .introduction .wp-block-group__inner-container {
-	height: 60vh;
+	min-height: 60vh;
 	display: flex;
 	align-items: center;
-	max-width: 470px;
+	max-width: 460px;
 }
 
 .has-huge-font-size {
 	font-family: var(--wp--typography--font-family-heading);
 	line-height: var(--wp--typography--line-height-heading);
+	padding-bottom: 98px;
+}
+
+@media screen and (min-width: 600px) {
+	.has-huge-font-size {
+		padding-bottom: 0;
+	}
 }
 
 /* Footer */
 
 .site-footer {
-	font-family: var(--wp--typography--font-family-heading);s
+	font-family: var(--wp--typography--font-family-heading);
 }

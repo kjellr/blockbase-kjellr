@@ -34,10 +34,10 @@ endif;
 /**
  * Enqueue scripts and styles.
  */
-function blockbase_kjell_blocks_enqueue() {
+function blockbase_kjell_enqueue() {
 	wp_enqueue_style( 'blockbase-kjell-styles', get_stylesheet_uri() );
 }
-add_action( 'wp_enqueue_scripts', 'blockbase_kjell_blocks_enqueue' );
+add_action( 'wp_enqueue_scripts', 'blockbase_kjell_enqueue' );
 
 /**
  * Load base styles in edit-site.
